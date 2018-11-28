@@ -75,4 +75,12 @@ if test $(which npm); then
   npm set registry https://gitlab.interactivestudios.nl:4873
 fi
 
+## Install ruby dependencies
+if test $(which gem); then
+  echo "${COLORED}Installing ruby stuff...${NC}"
+  gem install cocoapods
+  gem install fastlane
+  pod setup
+fi
+
 echo "\033[0;36m| Done installing. | "
