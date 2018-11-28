@@ -54,11 +54,12 @@ alias proj-install="npm install && composer install"
 alias pull-screenshots="adb pull /sdcard/Pictures/Screenshots/ ~/Desktop/Android_Screenshots/"
 alias proj-outdated="npm outdated && npm outdated -g && composer outdated"
 
-#export PATH="$(brew --prefix php@7.0)/bin:$PATH"
-
 export PATH="/usr/local/opt/php@7.0/bin:$PATH"
-export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
-export PATH=${PATH}:/usr/local/sbin:/devtools/android-sdk-macosx/platform-tools:/devtools/android-sdk-macosx/tools:~/.composer/vendor/bin
+#export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+#export PATH="/usr/local/opt/php@5.6/sbin:$PATH"
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home"
+export PATH=${PATH}:/usr/local/sbin:/devtools/android-sdk-macosx/platform-tools:/devtools/android-sdk-macosx/tools:~/.composer/vendor/bin:$JAVA_HOME/bin
 
 export PATH="/usr/local/opt/mariadb@10.1/bin:$PATH"
 fpath=(/usr/local/share/zsh-completions $fpath)
