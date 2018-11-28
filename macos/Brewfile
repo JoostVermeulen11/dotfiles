@@ -49,6 +49,7 @@ brew 'yarn'
 
 # Install Android stuff
 brew 'gradle'
+cask 'android-sdk'
 
 # Fonts
 cask 'font-fira-code'

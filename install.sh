@@ -83,4 +83,10 @@ if test $(which gem); then
   pod setup
 fi
 
+## Installing build tools
+if test $(which sdkmanager); then
+  echo "${COLORED}Installing android build tools stuff...${NC}"
+  sdkmanager "build-tools;23.0.1"
+fi
+
 echo "\033[0;36m| Done installing. | "
