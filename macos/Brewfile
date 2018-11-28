@@ -47,6 +47,9 @@ brew 'php@7.1'
 brew 'node'
 brew 'yarn'
 
+# Install Android stuff
+brew 'gradle'
+
 # Fonts
 cask 'font-fira-code'
 
